@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rate My Website - Penitel's Dev World</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="survey.html">📝 Daily Survey</a></li>
+      <li><a href="projects.html">📂 Projects & Progress</a></li>
+      <li><a href="feedback.html">💬 Feedback</a></li>
+      <li><a href="ratings.html">⭐ Ratings</a></li>
+    </ul>
+  </nav>
+
+  <main class="container">
+    <h1>⭐ Rate Penitel's World</h1>
+    <p class="intro">How magical was your visit? Choose a star rating and leave a comment ✨</p>
+
+    <form class="rating-form">
+      <div class="star-rating">
+        <input type="radio" id="star5" name="rating" value="5"><label for="star5">⭐</label>
+        <input type="radio" id="star4" name="rating" value="4"><label for="star4">⭐</label>
+        <input type="radio" id="star3" name="rating" value="3"><label for="star3">⭐</label>
+        <input type="radio" id="star2" name="rating" value="2"><label for="star2">⭐</label>
+        <input type="radio" id="star1" name="rating" value="1"><label for="star1">⭐</label>
+      </div>
+
+      <label for="comment">Leave a comment:</label>
+      <textarea id="comment" name="comment" rows="4" placeholder="Say something nice or helpful..."></textarea>
+
+      <button type="submit" class="button">📨 Submit Rating</button>
+    </form>
+  </main>
+</body>
+</html>
