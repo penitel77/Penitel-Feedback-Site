@@ -224,3 +224,39 @@ form.survey-form button {
   align-self: center;
   margin-top: 10px;
 }
+.project-update {
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #0f0f0f;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.row {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.preview-img {
+  max-width: 300px;
+  border-radius: 10px;
+  flex-shrink: 0;
+}
+
+.side-text {
+  flex: 1;
+}
+
+.full-text {
+  margin-top: 20px;
+}
+
+
+.curly-border {
+  border-width: 15px;
+  border-style: solid;
+  border-image: url('https://th.bing.com/th/id/R.e5e87adddadd2eb6bee7198ca414a2de?rik=E4GmLbTS9Gwqiw&riu=http%3a%2f%2fcdn.pastemagazine.com%2fwww%2fsystem%2fimages%2fphoto_albums%2f2d-mario%2flarge%2fsmb-1-1.jpg%3f1384968217&ehk=g9sScZVB2T1u9bexrzA7ZDrlxVlR6NGi%2fU%2bs%2f6Xp2KA%3d&risl=&pid=ImgRaw&r=0" alt="Mario Game" class="preview-img') 30 stretch; /* replace with your border image */
+}

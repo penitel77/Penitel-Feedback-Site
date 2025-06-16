@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mario 2D Game - Week 1</title>
+  <style>
+    body {
+      background-color: #1a1a1a;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: auto;
+      padding: 40px 20px;
+    }
+
+    h1 {
+      color: yellow;
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      align-items: flex-start;
+    }
+
+    .text {
+      flex: 1 1 300px;
+      min-width: 300px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+      flex: 1 1 300px;
+    }
+
+    .gallery img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    p {
+      line-height: 1.6;
+      font-size: 1.1rem;
+    }
+
+    .emoji {
+      font-size: 1.3rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Mario 2D Game - Week 1</h1>
+    <div class="content">
+      <div class="text">
+        <p class="emoji">🎮</p>
+       <p>
+<h2>🎮 Project Summary: Building a 2D Mario-Style Platformer in Unity</h2>
+<img src="MyImages/Screenshot 2025-06-04 074243.png" alt="Mario Game" class="preview-img" />
+
+<p>I began this project with the goal of building a 2D Mario-style platformer game in Unity, completely from scratch. I wanted the process to be broken down into small, manageable tasks, so I followed a step-by-step approach to help myself learn Unity while building the actual game.</p>
+<h2>🧱 Project Setup and Environment</h2>
+<p>I started by making sure Unity was properly installed and set up a new 2D project using the 2D Built-In Render Pipeline, which I chose over the 2D Universal Render Pipeline to keep things simple and avoid the complexities of URP.
+
+After creating the new project and opening it, I wasn't sure what to do next, so I took screenshots and sought out precise guidance on the first steps.</p>
+
+<img src="MyImages/Screenshot 2025-06-04 080930.png" alt="Mario Game" class="preview-img" />   
+
+<h2>🧍 Creating the Player</h2>
+<p>I created a basic player GameObject using a simple Cube as a placeholder character. At first, I wasn’t sure which shape to use, but I decided a cube was fine since I’d be replacing it later with a sprite. I added a Rigidbody2D to handle physics and a BoxCollider2D for collisions.
+
+Initially, the player didn’t fall or interact with the ground. I realized that the ground also needed a collider, so I added a BoxCollider2D to it and made sure the player’s Rigidbody2D had gravity enabled.</p>
+<img src="MyImages/Screenshot 2025-06-04 084613.png" alt="Mario Game" class="preview-img" />
+<h2>🎥 Adjusting the Camera</h2>
+<p>At this point, I noticed the camera wasn’t following the player, and sometimes the character moved off-screen. I adjusted the camera manually to center it on the player for now. I plan to use Unity’s Cinemachine later for a smoother follow system, but this worked for the initial stages.
+
+</p>
+<img src="MyImages/Screenshot 2025-06-04 085713.png" alt="Mario Game" class="preview-img" />  
+
+</div>
+      <div class="gallery">
+          <img src="MyImages/Screenshot 2025-06-04 074243.png" alt="Mario Game" class="preview-img" />   
+ <img src="MyImages/Screenshot 2025-06-04 080930.png" alt="Mario Game" class="preview-img" />   
+<img src="MyImages/Screenshot 2025-06-04 084613.png" alt="Mario Game" class="preview-img" />  
+<img src="MyImages/Screenshot 2025-06-04 085713.png" alt="Mario Game" class="preview-img" />  
+
+
+      </div>
+    </div>
+  </div>
+
+
+  <h1>Mario 2D Game - Week 3</h1>
+
+  <h2>👤 Replacing the Cube with a Sprite Character</h2>
+
+<img src="MyImages/Screenshot 2025-06-04 132852.png" alt="">
+<img src="MyImages/Screenshot 2025-06-05 233714.png" alt="">
+
+<P>Next, I imported a .png image of my character and added it as a new GameObject with a Sprite Renderer. I made sure the texture type was set to Sprite (2D and UI). After that, I deleted the old cube so that only the new sprite character remained.
+
+I briefly wondered if I needed to slice the sprite, but since it wasn’t a spritesheet (just a single full-body sprite), no slicing was necessary.</P>
+
+<P>Also i noticed the Animator folder was empty, and Unity gave me an error about a missing Animator component. That happened because one of my scripts was referencing animation parameters. Since I wasn’t ready to set up animations yet, I decided to continue without the Animator and focus on gameplay mechanics first.
+
+</P>
+
+<p>By the time I took my third screenshot, I had the custom sprite character successfully in the game, visible on screen. I had configured gravity and colliders, and the player was interacting correctly with the ground. The basic platformer setup was complete, and I was ready to move on to mechanics like movement, coins, obstacles, and enemies.</p>
+
+
+
+</body>
+</html>
