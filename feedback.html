@@ -4,8 +4,48 @@
   <meta charset="UTF-8">
   <title>Feedback - Penitel's Dev World</title>
   <link rel="stylesheet" href="style.css">
+  <style>
+    iframe {
+      border: none;
+      border-radius: 12px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+
+    .intro {
+      font-size: 1.2rem;
+      margin-bottom: 20px;
+    }
+
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      gap: 20px;
+      background-color: #eee;
+      padding: 10px 20px;
+      border-radius: 12px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    nav ul li a:hover {
+      color: #4b0082;
+    }
+  </style>
 </head>
 <body>
+
+  <!-- Navigation Menu -->
   <nav>
     <ul>
       <li><a href="index.html">🏠 Home</a></li>
@@ -16,19 +56,21 @@
     </ul>
   </nav>
 
+  <!-- Main Content -->
   <main class="container">
     <h1>💬 Feedback</h1>
     <p class="intro">Tell me what you think! Share your thoughts, ideas, or even bugs you found 👀</p>
 
-    <form class="feedback-form">
-      <label for="name">Name (optional):</label>
-      <input type="text" id="name" name="name" placeholder="Your name">
-
-      <label for="message">Your Feedback:</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your thoughts here..." required></textarea>
-
-      <button type="submit" class="button">📩 Send Feedback</button>
-    </form>
+    <!-- Embedded Microsoft Form Only -->
+    <iframe 
+      src="https://forms.office.com/e/qgnGdUTWFL?embedded=true" 
+      width="100%" 
+      height="800px" 
+      allowfullscreen 
+      title="Feedback Form">
+      Loading…
+    </iframe>
   </main>
+
 </body>
 </html>

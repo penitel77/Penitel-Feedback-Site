@@ -260,3 +260,21 @@ form.survey-form button {
   border-style: solid;
   border-image: url('https://th.bing.com/th/id/R.e5e87adddadd2eb6bee7198ca414a2de?rik=E4GmLbTS9Gwqiw&riu=http%3a%2f%2fcdn.pastemagazine.com%2fwww%2fsystem%2fimages%2fphoto_albums%2f2d-mario%2flarge%2fsmb-1-1.jpg%3f1384968217&ehk=g9sScZVB2T1u9bexrzA7ZDrlxVlR6NGi%2fU%2bs%2f6Xp2KA%3d&risl=&pid=ImgRaw&r=0" alt="Mario Game" class="preview-img') 30 stretch; /* replace with your border image */
 }
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #4b0082;
+  color: #fff;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #360061;
+}
+
+
+
